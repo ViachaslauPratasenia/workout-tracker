@@ -1,5 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:workout_tracker/utils/images.dart';
+import 'package:workout_tracker/models/categories.dart';
 
 part 'category.g.dart';
 
@@ -21,10 +21,15 @@ class Category {
   Map<String, dynamic> toJson() => _$CategoryToJson(this);
 }
 
-List<Category> getMainCategories() {
-  return [
-    Category(title: 'Верх', imagePath: Images.upperBodyIcon),
-    Category(title: 'Низ', imagePath: Images.lowerBodyIcon),
-    Category(title: 'Кардио', imagePath: Images.cardioIcon),
-  ];
+extension CategoryExt on Category {
+  MainCategories getTypeByCategory() {
+    switch (title) {
+      case 'Верх':
+        return MainCategories.upperBody;
+      case 'Низ':
+        return MainCategories.lowerBody;
+    }
+
+    return MainCategories.cardio;
+  }
 }

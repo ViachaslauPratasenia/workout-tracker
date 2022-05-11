@@ -28,7 +28,7 @@ class ExerciseListItem extends StatelessWidget {
         ),
         onTap: () => onClicked(),
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+          padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 24.h),
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
