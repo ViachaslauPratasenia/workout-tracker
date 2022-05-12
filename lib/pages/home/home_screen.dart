@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:workout_tracker/pages/exercise_categories/exercise_categories_screen.dart';
+import 'package:workout_tracker/services/file_service.dart';
 import 'package:workout_tracker/utils/ui_kit/app_bar.dart';
 import 'package:workout_tracker/utils/colors.dart';
 
@@ -15,6 +16,8 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
+    FileService.parseTrainingListFile();
+
     return Scaffold(
       backgroundColor: kPrimaryColor,
       appBar: CustomAppBar(

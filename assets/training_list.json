@@ -1,0 +1,190 @@
+{
+  "trainingList": [
+    {
+      "id": 1,
+      "title": "Тренировка с гантелями",
+      "days": [
+        {
+          "number": 1,
+          "exercises": [
+            {
+              "id": 1,
+              "name": "Болгарские приседания",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 15,
+              "type": "lowerBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Жим гантелей на наклонной",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 12,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Подтягивания обратным хватом",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 12,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Жим гантелей стоя",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 15,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Румынская тяга",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 15,
+              "type": "upperBody",
+              "description": null
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "description": "Отдых",
+          "exercises": []
+        },
+        {
+          "number": 3,
+          "exercises": [
+            {
+              "id": 1,
+              "name": "Жим гантелей",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 15,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Тяга гантели одной рукой",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 15,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Отведения гантелей стоя",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 15,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Сгибания на бицепс",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 12,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Подъемы на одной ноге",
+              "sets": 4,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 15,
+              "type": "lowerBody",
+              "description": null
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "description": "Отдых",
+          "exercises": []
+        },
+        {
+          "number": 5,
+          "exercises": [
+            {
+              "id": 1,
+              "name": "Подтягивания",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 12,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Жим гантелей на наклонной",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 12,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Двойные приседания",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 20,
+              "type": "lowerBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Тяга гатнелей к лицу",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 15,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Французские разгибания",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 12,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Подъем ног в висе",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 15,
+              "type": "upperBody",
+              "description": null
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "description": "Отдых",
+          "exercises": []
+        },
+        {
+          "number": 7,
+          "description": "Отдых",
+          "exercises": []
+        }
+      ],
+      "description": null
+    }
+  ]
+}

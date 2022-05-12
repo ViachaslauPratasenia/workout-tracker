@@ -1,28 +1,30 @@
 import 'package:json_annotation/json_annotation.dart';
 
-part 'train_exercise.g.dart';
+part 'exercise.g.dart';
 
 @JsonSerializable()
-class TrainExercise {
+class Exercise {
   final int id;
   final String name;
   final int sets;
+  final String type;
 
   final int? setsRelaxInSeconds;
   final int? repeatCount;
   final String? description;
 
-  TrainExercise({
+  Exercise({
     required this.id,
     required this.name,
+    required this.type,
     this.sets = 1,
     this.setsRelaxInSeconds,
     this.repeatCount,
     this.description,
   });
 
-  factory TrainExercise.fromJson(Map<String, dynamic> json) =>
-      _$TrainExerciseFromJson(json);
+  factory Exercise.fromJson(Map<String, dynamic> json) =>
+      _$ExerciseFromJson(json);
 
-  Map<String, dynamic> toJson() => _$TrainExerciseToJson(this);
+  Map<String, dynamic> toJson() => _$ExerciseToJson(this);
 }

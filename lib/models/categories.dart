@@ -1,5 +1,5 @@
 import 'package:workout_tracker/models/category.dart';
-import 'package:workout_tracker/models/exercise.dart';
+import 'package:workout_tracker/models/workout//exercise.dart';
 import 'package:workout_tracker/utils/images.dart';
 
 enum MainCategories {
@@ -19,25 +19,25 @@ List<Category> getMainCategories() {
 List<Exercise> getExercises() {
   return [
     Exercise(
-      title: 'Прогулка 4км/ч',
-      imagePath: '',
-      categoryType: MainCategories.cardio,
+      id: 1,
+      name: 'Прогулка 4км/ч',
+      type: MainCategories.cardio.name,
     ),
     Exercise(
-      title: 'Ходьба 6км/ч',
-      imagePath: '',
-      categoryType: MainCategories.cardio,
+      id: 1,
+      name: 'Ходьба 6км/ч',
+      type: MainCategories.cardio.name,
     ),
     Exercise(
-      title: 'Бег 12км/ч',
-      imagePath: '',
-      categoryType: MainCategories.cardio,
+      id: 1,
+      name: 'Бег 12км/ч',
+      type: MainCategories.cardio.name,
     ),
   ];
 }
 
 List<Exercise> getExercisesByCategory(MainCategories category) {
   return getExercises()
-      .where((element) => element.categoryType == category)
+      .where((element) => element.type == category.name)
       .toList();
 }

@@ -35,7 +35,7 @@ class ExerciseListScreen extends StatelessWidget {
                 child: ExerciseListItem(
                   onClicked: () {},
                   imagePath: Images.cardioIcon,
-                  title: item.title,
+                  title: item.name,
                 ),
               );
             },

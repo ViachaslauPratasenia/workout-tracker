@@ -9,7 +9,7 @@ part of 'day.dart';
 Day _$DayFromJson(Map<String, dynamic> json) => Day(
       number: json['number'] as int? ?? 0,
       exercises: (json['exercises'] as List<dynamic>?)
-              ?.map((e) => TrainExercise.fromJson(e as Map<String, dynamic>))
+              ?.map((e) => Exercise.fromJson(e as Map<String, dynamic>))
               .toList() ??
           const [],
       description: json['description'] as String?,

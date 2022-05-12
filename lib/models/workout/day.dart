@@ -1,12 +1,12 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:workout_tracker/models/train/train_exercise.dart';
+import 'package:workout_tracker/models/workout//exercise.dart';
 
 part 'day.g.dart';
 
 @JsonSerializable()
 class Day {
   final int number;
-  final List<TrainExercise> exercises;
+  final List<Exercise> exercises;
 
   //если description != null значит там значение 'Отдых'
   final String? description;
