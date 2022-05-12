@@ -2,7 +2,7 @@
   "trainingList": [
     {
       "id": 1,
-      "title": "Тренировка с гантелями",
+      "title": "Тренировки с гантелями",
       "days": [
         {
           "number": 1,
@@ -165,6 +165,428 @@
             {
               "id": 2,
               "name": "Подъем ног в висе",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 15,
+              "type": "upperBody",
+              "description": null
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "description": "Отдых",
+          "exercises": []
+        },
+        {
+          "number": 7,
+          "description": "Отдых",
+          "exercises": []
+        }
+      ],
+      "description": null
+    },
+    {
+      "id": 2,
+      "title": "Тренировки в зале",
+      "days": [
+        {
+          "number": 1,
+          "exercises": [
+            {
+              "id": 1,
+              "name": "Приседания",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 12,
+              "type": "lowerBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Жим лежа",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 10,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Тяга штанги в наклоне",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 12,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "RDL",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 12,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Францзуский с гантелями",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 12,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Сгибания штанги на бицепс",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 12,
+              "type": "upperBody",
+              "description": null
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "description": "Отдых",
+          "exercises": []
+        },
+        {
+          "number": 3,
+          "exercises": [
+            {
+              "id": 1,
+              "name": "Подтягивания",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 12,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Жим гантелей сидя",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 15,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Приседания двойные с гантелями",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 15,
+              "type": "lowerBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Австралийские подтягивания (или тяга горизонтального блока)",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 12,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Боковые отведения гантели на плечи",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 12,
+              "type": "upperBody",
+              "description": null
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "description": "Отдых",
+          "exercises": []
+        },
+        {
+          "number": 5,
+          "exercises": [
+            {
+              "id": 1,
+              "name": "Жим гантелей на наклонной",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 15,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Приседания на одной с поддержкой",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 10,
+              "type": "lowerBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Подтягивания",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 12,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Брусья",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 10,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Тяга гантелей к лицу",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 15,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Хип транс одна нога",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 12,
+              "type": "lowerBody",
+              "description": null
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "description": "Отдых",
+          "exercises": []
+        },
+        {
+          "number": 7,
+          "description": "Отдых",
+          "exercises": []
+        }
+      ],
+      "description": null
+    },
+
+
+
+
+
+    {
+      "id": 3,
+      "title": "Тренировки турники/брусья",
+      "days": [
+        {
+          "number": 1,
+          "exercises": [
+            {
+              "id": 1,
+              "name": "Подтягивания",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 15,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Армейские отжимания",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 12,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Австралийские подтягивания",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 15,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Бицепс бедра",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 15,
+              "type": "lowerBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Подъемы ног",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 15,
+              "type": "upperBody",
+              "description": null
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "exercises": [
+            {
+              "id": 1,
+              "name": "Брусья",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 30,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Подтягивания обратным хватом",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 15,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Отжимания",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 30,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Приседания двойные",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 30,
+              "type": "lowerBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Подъемы ног",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 15,
+              "type": "upperBody",
+              "description": null
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "description": "Отдых",
+          "exercises": []
+        },
+        {
+          "number": 4,
+          "exercises": [
+            {
+              "id": 1,
+              "name": "Подтягивания",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 15,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Армейские отжимания",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 12,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Австралийские подтягивания",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 15,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Бицепс бедра",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 15,
+              "type": "lowerBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Подъемы ног",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 15,
+              "type": "upperBody",
+              "description": null
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "exercises": [
+            {
+              "id": 1,
+              "name": "Брусья",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 30,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Подтягивания обратным хватом",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 15,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Отжимания треугольник",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 30,
+              "type": "upperBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Взрывные приседания",
+              "sets": 3,
+              "setsRelaxInSeconds": null,
+              "repeatCount": 20,
+              "type": "lowerBody",
+              "description": null
+            },
+            {
+              "id": 2,
+              "name": "Подъемы ног",
               "sets": 3,
               "setsRelaxInSeconds": null,
               "repeatCount": 15,
