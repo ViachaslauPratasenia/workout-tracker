@@ -1,0 +1,195 @@
+[
+  {
+    "id": 1,
+    "name": "Жим гантелей",
+    "type": "upperBody",
+    "description": null
+  },
+  {
+    "id": 2,
+    "name": "Жим гантелей на наклонной",
+    "type": "upperBody",
+    "description": null
+  },
+  {
+    "id": 3,
+    "name": "Жим гантелей стоя",
+    "type": "upperBody",
+    "description": null
+  },
+  {
+    "id": 4,
+    "name": "Жим гантелей сидя",
+    "type": "upperBody",
+    "description": null
+  },
+  {
+    "id": 5,
+    "name": "Тяга гантели одной рукой",
+    "type": "upperBody",
+    "description": null
+  },
+  {
+    "id": 6,
+    "name": "Отведения гантелей стоя",
+    "type": "upperBody",
+    "description": null
+  },
+  {
+    "id": 7,
+    "name": "Тяга гантелей к лицу",
+    "type": "upperBody",
+    "description": null
+  },
+  {
+    "id": 8,
+    "name": "Французский с гантелями",
+    "type": "upperBody",
+    "description": null
+  },
+  {
+    "id": 9,
+    "name": "Сгибания на бицепс",
+    "type": "upperBody",
+    "description": null
+  },
+  {
+    "id": 10,
+    "name": "Румынская тяга",
+    "type": "upperBody",
+    "description": null
+  },
+  {
+    "id": 11,
+    "name": "Французские разгибания",
+    "type": "upperBody",
+    "description": null
+  },
+  {
+    "id": 12,
+    "name": "Подтягивания",
+    "type": "upperBody",
+    "description": null
+  },
+  {
+    "id": 13,
+    "name": "Подтягивания обратным хватом",
+    "type": "upperBody",
+    "description": null
+  },
+  {
+    "id": 14,
+    "name": "Австралийские подтягивания",
+    "type": "upperBody",
+    "description": null
+  },
+  {
+    "id": 15,
+    "name": "Жим лежа",
+    "type": "upperBody",
+    "description": null
+  },
+  {
+    "id": 16,
+    "name": "Тяга штанги в наклоне",
+    "type": "upperBody",
+    "description": null
+  },
+  {
+    "id": 17,
+    "name": "RDL",
+    "repeatCount": 12,
+    "type": "upperBody",
+    "description": null
+  },
+  {
+    "id": 18,
+    "name": "Отжимания",
+    "type": "upperBody",
+    "description": null
+  },
+  {
+    "id": 19,
+    "name": "Армейские отжимания",
+    "type": "upperBody",
+    "description": null
+  },
+  {
+    "id": 20,
+    "name": "Отжимания треугольник",
+    "type": "upperBody",
+    "description": null
+  },
+  {
+    "id": 21,
+    "name": "Брусья",
+    "type": "upperBody",
+    "description": null
+  },
+  {
+    "id": 22,
+    "name": "Подъем ног в висе",
+    "type": "upperBody",
+    "description": null
+  },
+  {
+    "id": 503,
+    "name": "Приседания",
+    "type": "lowerBody",
+    "description": null
+  },
+  {
+    "id": 504,
+    "name": "Приседания на одной с поддержкой",
+    "type": "lowerBody",
+    "description": null
+  },
+  {
+    "id": 505,
+    "name": "Приседания двойные",
+    "type": "lowerBody",
+    "description": null
+  },
+  {
+    "id": 506,
+    "name": "Приседания двойные с гантелями",
+    "type": "lowerBody",
+    "description": null
+  },
+  {
+    "id": 507,
+    "name": "Взрывные приседания",
+    "type": "lowerBody",
+    "description": null
+  },
+  {
+    "id": 508,
+    "name": "Болгарские приседания",
+    "type": "lowerBody",
+    "description": null
+  },
+  {
+    "id": 509,
+    "name": "Подъемы на одной ноге",
+    "type": "lowerBody",
+    "description": null
+  },
+  {
+    "id": 510,
+    "name": "Двойные приседания",
+    "type": "lowerBody",
+    "description": null
+  },
+  {
+    "id": 511,
+    "name": "Бицепс бедра",
+    "type": "lowerBody",
+    "description": null
+  },
+  {
+    "id": 512,
+    "name": "Хип транс одна нога",
+    "type": "lowerBody",
+    "description": null
+  }
+]
