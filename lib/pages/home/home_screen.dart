@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:workout_tracker/pages/exercise_categories/exercise_categories_screen.dart';
+import 'package:workout_tracker/models/categories.dart';
+import 'package:workout_tracker/pages/categories/categories_screen.dart';
 import 'package:workout_tracker/services/file_service.dart';
 import 'package:workout_tracker/utils/ui_kit/app_bar.dart';
 import 'package:workout_tracker/utils/colors.dart';
@@ -39,7 +40,10 @@ class _HomeScreenState extends State<HomeScreen> {
             Positioned(
               child: FloatingActionButton(
                 onPressed: () {
-                  Get.to(() => const ExerciseCategoriesScreen());
+                  Get.to(
+                    () => const CategoriesScreen(
+                        categoriesType: CategoriesType.categories),
+                  );
                 },
                 backgroundColor: kSecondaryColor,
                 child: const Icon(

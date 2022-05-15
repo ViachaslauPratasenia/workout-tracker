@@ -3,15 +3,18 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:workout_tracker/utils/colors.dart';
 import 'package:workout_tracker/utils/ui_kit/heading.dart';
 
-class ExerciseListItem extends StatelessWidget {
+class BaseListItem extends StatelessWidget {
   final String imagePath;
   final String title;
+  final Widget? child;
+
   final Function onClicked;
 
-  const ExerciseListItem({
+  const BaseListItem({
     Key? key,
     this.imagePath = '',
     this.title = '',
+    this.child,
     required this.onClicked,
   }) : super(key: key);
 
@@ -29,24 +32,28 @@ class ExerciseListItem extends StatelessWidget {
         onTap: () => onClicked(),
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 24.h),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Image.asset(
-                imagePath,
-                width: 36.w,
-                height: 36.w,
-                color: kTextColor,
-              ),
-              SizedBox(
-                width: 16.w,
-              ),
-              Heading(
-                title,
-                size: HeadingSize.h4,
-              )
-            ],
-          ),
+          child: (child != null)
+              ? child
+              : Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    if (imagePath.isNotEmpty)
+                      Image.asset(
+                        imagePath,
+                        width: 36.w,
+                        height: 36.w,
+                        color: kTextColor,
+                      ),
+                    if (imagePath.isNotEmpty)
+                      SizedBox(
+                        width: 16.w,
+                      ),
+                    Heading(
+                      title,
+                      size: HeadingSize.h4,
+                    )
+                  ],
+                ),
         ),
       ),
     );

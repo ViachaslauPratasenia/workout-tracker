@@ -4,23 +4,18 @@ part 'exercise.g.dart';
 
 @JsonSerializable()
 class Exercise {
-  final int id;
-  final String name;
+  @JsonKey(name: 'exerciseId')
+  final int basicExerciseId;
   final int sets;
-  final String type;
 
   final int? setsRelaxInSeconds;
   final int? repeatCount;
-  final String? description;
 
   Exercise({
-    required this.id,
-    required this.name,
-    required this.type,
+    required this.basicExerciseId,
     this.sets = 1,
     this.setsRelaxInSeconds,
     this.repeatCount,
-    this.description,
   });
 
   factory Exercise.fromJson(Map<String, dynamic> json) =>
