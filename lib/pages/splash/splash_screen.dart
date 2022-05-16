@@ -67,7 +67,7 @@ class SplashScreenState extends State<SplashScreen>
   void goToHomeAfterDelay() async {
     Timer(const Duration(seconds: 2), () async {
       _loadTrainings().then((value) {
-        Get.to(() => const HomeScreen());
+        Get.off(() => const HomeScreen());
       });
     });
   }
