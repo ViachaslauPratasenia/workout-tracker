@@ -3,8 +3,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:workout_tracker/models/categories.dart';
 import 'package:workout_tracker/pages/categories/categories_screen.dart';
+import 'package:workout_tracker/pages/home/bottom_navigation/bottom_navigation_item.dart';
 import 'package:workout_tracker/utils/colors.dart';
 import 'package:workout_tracker/utils/ui_kit/app_bar.dart';
+import 'package:workout_tracker/utils/ui_kit/base_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -16,8 +18,10 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return BaseScreen(
       backgroundColor: kPrimaryColor,
+      activeNavigationItem: BottomNavigationItem.workout,
+      topPadding: ScreenUtil().statusBarHeight,
       appBar: CustomAppBar(
         titleStr: 'Workout tracker',
         actions: [
@@ -31,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-      body: SafeArea(
+      child: SafeArea(
         child: Stack(
           children: [
             Positioned(
