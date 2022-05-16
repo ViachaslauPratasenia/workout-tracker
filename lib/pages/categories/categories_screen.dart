@@ -5,6 +5,7 @@ import 'package:workout_tracker/models/categories.dart';
 import 'package:workout_tracker/models/category.dart';
 import 'package:workout_tracker/pages/categories/components/exercise_category_item.dart';
 import 'package:workout_tracker/pages/exercise_list/exercise_list_screen.dart';
+import 'package:workout_tracker/pages/workout_list/workout_list_screen.dart';
 import 'package:workout_tracker/utils/colors.dart';
 import 'package:workout_tracker/utils/ui_kit/app_bar.dart';
 
@@ -42,9 +43,7 @@ class CategoriesScreen extends StatelessWidget {
                     onClicked: () {
                       //todo
                       if (categories[index].title == 'Готовая тренировка') {
-                        // Get.to(
-                        //       () => ExerciseListScreen(category: categories[index]),
-                        // )
+                        Get.to(() => const WorkoutListScreen());
                         return;
                       }
 
@@ -52,7 +51,8 @@ class CategoriesScreen extends StatelessWidget {
                         Get.to(
                           () => const CategoriesScreen(
                             categoriesType: CategoriesType.exercises,
-                          ), preventDuplicates: false
+                          ),
+                          preventDuplicates: false,
                         );
                         return;
                       }

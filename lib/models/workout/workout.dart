@@ -14,15 +14,17 @@ class Workout extends Equatable {
   final String title;
   @HiveField(2)
   final List<Day> days;
-
   @HiveField(3)
   final String? description;
+  @HiveField(4)
+  final int level;
 
   const Workout({
     this.id,
     required this.title,
     this.days = const [],
     this.description,
+    this.level = 0,
   });
 
   factory Workout.fromJson(Map<String, dynamic> json) =>
@@ -31,5 +33,5 @@ class Workout extends Equatable {
   Map<String, dynamic> toJson() => _$WorkoutToJson(this);
 
   @override
-  List<Object?> get props => [id, title, days, description];
+  List<Object?> get props => [id, title, days, description, level];
 }

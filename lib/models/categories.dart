@@ -13,7 +13,7 @@ enum MainCategories {
 List<Category> getMainCategories() {
   return [
     Category(title: 'Готовая тренировка', imagePath: Images.workoutPlanIcon),
-    Category(title: 'Список Упражнений', imagePath: Images.exercicesIcon),
+    Category(title: 'Список Упражнений', imagePath: Images.exercisesIcon),
   ];
 }
 
@@ -25,28 +25,8 @@ List<Category> getExerciseCategories() {
   ];
 }
 
-List<Exercise> getExercises() {
-  return [
-    // Exercise(
-    //   id: 1,
-    //   name: 'Прогулка 4км/ч',
-    //   type: MainCategories.cardio.name,
-    // ),
-    // Exercise(
-    //   id: 1,
-    //   name: 'Ходьба 6км/ч',
-    //   type: MainCategories.cardio.name,
-    // ),
-    // Exercise(
-    //   id: 1,
-    //   name: 'Бег 12км/ч',
-    //   type: MainCategories.cardio.name,
-    // ),
-  ];
-}
-
-// List<Exercise> getExercisesByCategory(MainCategories category) {
-//   return getExercises()
-//       .where((element) => element.type == category.name)
-//       .toList();
-// }
+Map<int, String> workoutIconsMap = {
+  1: Images.dumbbellsIcon,
+  2: Images.gymIcon,
+  3: Images.pullBarsIcon,
+};
