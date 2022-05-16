@@ -48,9 +48,13 @@ class BaseListItem extends StatelessWidget {
                       SizedBox(
                         width: 16.w,
                       ),
-                    Heading(
-                      title,
-                      size: HeadingSize.h4,
+                    Expanded(
+                      child: Heading(
+                        title,
+                        size: HeadingSize.h4,
+                        maxLines: 3,
+                        overflow: TextOverflow.ellipsis,
+                      ),
                     )
                   ],
                 ),

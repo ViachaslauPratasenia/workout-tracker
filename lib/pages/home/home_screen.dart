@@ -3,9 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:workout_tracker/models/categories.dart';
 import 'package:workout_tracker/pages/categories/categories_screen.dart';
-import 'package:workout_tracker/services/file_service.dart';
-import 'package:workout_tracker/utils/ui_kit/app_bar.dart';
 import 'package:workout_tracker/utils/colors.dart';
+import 'package:workout_tracker/utils/ui_kit/app_bar.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -17,8 +16,6 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    FileService.parseTrainingListFile();
-
     return Scaffold(
       backgroundColor: kPrimaryColor,
       appBar: CustomAppBar(

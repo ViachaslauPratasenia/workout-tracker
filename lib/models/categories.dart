@@ -1,5 +1,5 @@
 import 'package:workout_tracker/models/category.dart';
-import 'package:workout_tracker/models/workout//exercise.dart';
+import 'package:workout_tracker/models/workout/exercise.dart';
 import 'package:workout_tracker/utils/images.dart';
 
 enum CategoriesType { categories, exercises }
@@ -12,8 +12,8 @@ enum MainCategories {
 
 List<Category> getMainCategories() {
   return [
-    Category(title: 'Готовая тренировка', imagePath: Images.upperBodyIcon),
-    Category(title: 'Список Упражнений', imagePath: Images.lowerBodyIcon),
+    Category(title: 'Готовая тренировка', imagePath: Images.workoutPlanIcon),
+    Category(title: 'Список Упражнений', imagePath: Images.exercicesIcon),
   ];
 }
 

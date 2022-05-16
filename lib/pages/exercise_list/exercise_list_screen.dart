@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:workout_tracker/di/di.dart';
 import 'package:workout_tracker/models/category.dart';
+import 'package:workout_tracker/storage/basic_exercises_storage.dart';
 import 'package:workout_tracker/utils/colors.dart';
 import 'package:workout_tracker/utils/images.dart';
 import 'package:workout_tracker/utils/ui_kit/app_bar.dart';
@@ -14,8 +16,9 @@ class ExerciseListScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // var list = getExercisesByCategory(category.getTypeByCategory());
-    var list = [];
+    var list = DI
+        .find<BasicExerciseStorage>()
+        .getExerciseListByType(category.getTypeByCategory());
 
     return Scaffold(
       backgroundColor: kPrimaryColor,
@@ -34,7 +37,7 @@ class ExerciseListScreen extends StatelessWidget {
                 padding: EdgeInsets.only(bottom: 16.h),
                 child: BaseListItem(
                   onClicked: () {},
-                  imagePath: Images.cardioIcon,
+                  // imagePath: Images.cardioIcon,
                   title: item.name,
                 ),
               );

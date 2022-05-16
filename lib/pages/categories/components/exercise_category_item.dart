@@ -20,24 +20,30 @@ class ExerciseCategoryItem extends StatelessWidget {
     return BaseListItem(
       onClicked: onClicked,
       child: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Image.asset(
-              category.imagePath,
-              width: 100.w,
-              height: 100.w,
-              color: kTextColor,
-            ),
-            SizedBox(
-              height: 16.h,
-            ),
-            Heading(
-              category.title,
-              size: HeadingSize.h3,
-            ),
-          ],
-        ),
+        child: LayoutBuilder(
+          builder: (context, constraint) {
+            return Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Expanded(
+                  child: Image.asset(
+                    category.imagePath,
+                    width: constraint.maxHeight * 0.6,
+                    height: constraint.maxHeight * 0.6,
+                    color: kTextColor,
+                  ),
+                ),
+                SizedBox(
+                  height: 8.h,
+                ),
+                Heading(
+                  category.title,
+                  size: HeadingSize.h3,
+                ),
+              ],
+            );
+          },
+        )
       ),
     );
   }
