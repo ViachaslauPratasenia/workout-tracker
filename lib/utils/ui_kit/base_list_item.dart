@@ -7,6 +7,8 @@ class BaseListItem extends StatelessWidget {
   final String imagePath;
   final String title;
   final Widget? child;
+  final String? backgroundPath;
+  final double? height;
 
   final Function onClicked;
 
@@ -15,6 +17,8 @@ class BaseListItem extends StatelessWidget {
     this.imagePath = '',
     this.title = '',
     this.child,
+    this.backgroundPath,
+    this.height,
     required this.onClicked,
   }) : super(key: key);
 
@@ -30,34 +34,45 @@ class BaseListItem extends StatelessWidget {
           Radius.circular(16.r),
         ),
         onTap: () => onClicked(),
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 24.h),
-          child: (child != null)
-              ? child
-              : Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    if (imagePath.isNotEmpty)
-                      Image.asset(
-                        imagePath,
-                        width: 36.w,
-                        height: 36.w,
-                        color: kTextColor,
-                      ),
-                    if (imagePath.isNotEmpty)
-                      SizedBox(
-                        width: 16.w,
-                      ),
-                    Expanded(
-                      child: Heading(
-                        title,
-                        size: HeadingSize.h4,
-                        maxLines: 3,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                    )
-                  ],
-                ),
+        child: Stack(
+          alignment: Alignment.center,
+          children: [
+            if (backgroundPath != null)
+              Image.asset(
+                backgroundPath!,
+                fit: BoxFit.fill,
+              ),
+            Container(
+              height: height,
+              padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 24.h),
+              child: (child != null)
+                  ? child
+                  : Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        if (imagePath.isNotEmpty)
+                          Image.asset(
+                            imagePath,
+                            width: 36.w,
+                            height: 36.w,
+                            color: kTextColor,
+                          ),
+                        if (imagePath.isNotEmpty)
+                          SizedBox(
+                            width: 16.w,
+                          ),
+                        Expanded(
+                          child: Heading(
+                            title,
+                            size: HeadingSize.h4,
+                            maxLines: 3,
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        )
+                      ],
+                    ),
+            ),
+          ],
         ),
       ),
     );

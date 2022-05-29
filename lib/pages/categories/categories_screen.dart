@@ -23,7 +23,6 @@ class CategoriesScreen extends StatelessWidget {
         : getExerciseCategories();
 
     return BaseScreen(
-      backgroundColor: kPrimaryColor,
       activeNavigationItem: BottomNavigationItem.manual,
       appBar: CustomAppBar(
         titleStr: 'Выберите категорию',

@@ -1,6 +1,7 @@
 class Images {
   Images._();
 
+  //Icons
   static const String cardioIcon = 'assets/cardio.png';
   static const String lowerBodyIcon = 'assets/lower_body.png';
   static const String upperBodyIcon = 'assets/upper_body.png';
@@ -17,4 +18,9 @@ class Images {
   static const String manualIcon = 'assets/manual.png';
   static const String progressIcon = 'assets/progress.png';
   static const String profileIcon = 'assets/profile.png';
+
+  //Images
+  static const String dumbbellsBackground = 'assets/dumbbells_workout.jpeg';
+  static const String homeBackground = 'assets/home_workout.jpeg';
+  static const String gymBackground = 'assets/gym_workout.jpeg';
 }

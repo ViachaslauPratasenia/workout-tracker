@@ -27,12 +27,12 @@ class WorkoutListItem extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Image.asset(
-            workoutIconsMap[workout.id] ?? '',
-            width: 36.w,
-            height: 36.w,
-            color: Colors.white,
-          ),
+          // Image.asset(
+          //   workoutIconsMap[workout.id] ?? '',
+          //   width: 36.w,
+          //   height: 36.w,
+          //   color: Colors.white,
+          // ),
           SizedBox(width: 16.w),
           Expanded(
             child: Column(

@@ -19,7 +19,6 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return BaseScreen(
-      backgroundColor: kPrimaryColor,
       activeNavigationItem: BottomNavigationItem.workout,
       topPadding: ScreenUtil().statusBarHeight,
       appBar: CustomAppBar(
@@ -43,7 +42,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 onPressed: () {
                   Get.to(
                     () => const CategoriesScreen(
-                        categoriesType: CategoriesType.categories),
+                      categoriesType: CategoriesType.categories,
+                    ),
                   );
                 },
                 backgroundColor: kSecondaryColor,
@@ -52,8 +52,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: kTextColor,
                 ),
               ),
-              right: 24,
-              bottom: 24,
+              right: 24.w,
+              bottom: 24.h,
             ),
           ],
         ),

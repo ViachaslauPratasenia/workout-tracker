@@ -1,5 +1,4 @@
 import 'package:workout_tracker/models/category.dart';
-import 'package:workout_tracker/models/workout/exercise.dart';
 import 'package:workout_tracker/utils/images.dart';
 
 enum CategoriesType { categories, exercises }
@@ -29,4 +28,16 @@ Map<int, String> workoutIconsMap = {
   1: Images.dumbbellsIcon,
   2: Images.gymIcon,
   3: Images.pullBarsIcon,
+};
+
+Map<int, String> workoutBackgroundImagesMap = {
+  1: Images.dumbbellsBackground,
+  2: Images.gymBackground,
+  3: Images.homeBackground,
+};
+
+Map<int, String> levelMaps = {
+  1: 'Beginner',
+  2: 'Intermediate',
+  3: 'Hard',
 };
