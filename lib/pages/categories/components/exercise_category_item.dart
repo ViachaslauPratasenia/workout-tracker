@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:workout_tracker/models/category.dart';
 import 'package:workout_tracker/utils/colors.dart';
 import 'package:workout_tracker/utils/ui_kit/base_list_item.dart';
-import 'package:workout_tracker/utils/ui_kit/heading.dart';
+import 'package:workout_tracker/utils/ui_kit/custom_text.dart';
 
 class ExerciseCategoryItem extends StatelessWidget {
   final Category category;
@@ -30,15 +30,15 @@ class ExerciseCategoryItem extends StatelessWidget {
                     category.imagePath,
                     width: constraint.maxHeight * 0.6,
                     height: constraint.maxHeight * 0.6,
-                    color: kTextColor,
+                    color: kPeppermint,
                   ),
                 ),
                 SizedBox(
                   height: 8.h,
                 ),
-                Heading(
+                CustomText(
                   category.title,
-                  size: HeadingSize.h3,
+                  size: TextSize.l,
                 ),
               ],
             );

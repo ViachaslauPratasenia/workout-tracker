@@ -57,7 +57,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       style: TextStyle(
         fontSize: 14.sp,
         fontWeight: FontWeight.bold,
-        color: kTextColor,
+        color: kPeppermint,
         letterSpacing: 2,
       ),
     );
@@ -76,7 +76,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       bottom: hasBorderLine
           ? PreferredSize(
               child: Container(
-                color: kTextColor.withOpacity(0.2),
+                color: kPeppermint.withOpacity(0.2),
                 height: 1.0,
               ),
               preferredSize: const Size.fromHeight(4.0),

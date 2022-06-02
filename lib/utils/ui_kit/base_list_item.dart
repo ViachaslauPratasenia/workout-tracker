@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:workout_tracker/utils/colors.dart';
-import 'package:workout_tracker/utils/ui_kit/heading.dart';
+import 'package:workout_tracker/utils/ui_kit/custom_text.dart';
 
 class BaseListItem extends StatelessWidget {
   final String imagePath;
@@ -25,7 +25,7 @@ class BaseListItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: kSecondaryColor,
+      color: kWedgewood,
       borderRadius: BorderRadius.all(
         Radius.circular(16.r),
       ),
@@ -55,16 +55,16 @@ class BaseListItem extends StatelessWidget {
                             imagePath,
                             width: 36.w,
                             height: 36.w,
-                            color: kTextColor,
+                            color: kPeppermint,
                           ),
                         if (imagePath.isNotEmpty)
                           SizedBox(
                             width: 16.w,
                           ),
                         Expanded(
-                          child: Heading(
+                          child: CustomText(
                             title,
-                            size: HeadingSize.h4,
+                            size: TextSize.m,
                             maxLines: 3,
                             overflow: TextOverflow.ellipsis,
                           ),

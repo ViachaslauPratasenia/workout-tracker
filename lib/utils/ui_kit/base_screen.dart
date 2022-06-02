@@ -16,7 +16,7 @@ class BaseScreen extends StatelessWidget {
     required this.child,
     this.appBar,
     this.activeNavigationItem,
-    this.backgroundColor = kPrimaryColor,
+    this.backgroundColor = kCello,
     this.topPadding = 0,
   }) : super(key: key);
 

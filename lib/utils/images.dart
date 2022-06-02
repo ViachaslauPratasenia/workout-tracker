@@ -23,4 +23,5 @@ class Images {
   static const String dumbbellsBackground = 'assets/dumbbells_workout.jpeg';
   static const String homeBackground = 'assets/home_workout.jpeg';
   static const String gymBackground = 'assets/gym_workout.jpeg';
+  static const String splashBg = 'assets/images/splash_bg.png';
 }

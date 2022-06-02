@@ -21,7 +21,7 @@ class BottomNavigation extends StatelessWidget {
           Container(
             width: ScreenUtil().screenWidth,
             height: 0.5,
-            color: kTextColor,
+            color: kPeppermint,
           ),
           Expanded(
             child: Row(
@@ -73,7 +73,7 @@ class _NavigationItem extends StatelessWidget {
             padding: EdgeInsets.all(8.w),
             child: Image.asset(
               item.image,
-              color: activeItem == item ? kTextColor : kSecondaryColor,
+              color: activeItem == item ? kPeppermint : kWedgewood,
               // fit: BoxFit.fill,
               width: 20.w,
               height: 20.w,

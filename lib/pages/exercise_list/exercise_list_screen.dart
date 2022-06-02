@@ -21,7 +21,7 @@ class ExerciseListScreen extends StatelessWidget {
         .getExerciseListByType(category.getTypeByCategory());
 
     return Scaffold(
-      backgroundColor: kPrimaryColor,
+      backgroundColor: kCello,
       appBar: CustomAppBar(
         titleStr: category.title,
       ),

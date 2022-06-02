@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:workout_tracker/models/categories.dart';
 import 'package:workout_tracker/models/workout/workout.dart';
-import 'package:workout_tracker/utils/ui_kit/heading.dart';
+import 'package:workout_tracker/utils/ui_kit/custom_text.dart';
 import 'package:workout_tracker/utils/ui_kit/subheading.dart';
 
 class DescriptionTitle extends StatelessWidget {
@@ -32,13 +32,13 @@ class DescriptionTitle extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Heading(
+                  CustomText(
                     levelMaps[workout.level] ?? '',
-                    size: HeadingSize.h4,
+                    size: TextSize.m,
                   ),
-                  const Subheading(
+                  const CustomText(
                     'Level',
-                    size: SubheadingSize.s,
+                    size: TextSize.s,
                   )
                 ],
               ),
@@ -46,13 +46,13 @@ class DescriptionTitle extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Heading(
+                  CustomText(
                     '${workout.days.length}',
-                    size: HeadingSize.h4,
+                    size: TextSize.m,
                   ),
-                  const Subheading(
+                  const CustomText(
                     'Days',
-                    size: SubheadingSize.s,
+                    size: TextSize.s,
                   )
                 ],
               ),

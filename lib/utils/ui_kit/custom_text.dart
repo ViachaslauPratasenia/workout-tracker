@@ -2,26 +2,26 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:workout_tracker/utils/colors.dart';
 
-enum HeadingSize { h1, h2, h3, h4, h5 }
-enum HeadingType { bold, medium, book }
+enum TextSize { h1, h2, h3, h4, xxl, xl, l, m, s }
+enum TextType { bold, semiBold, regular }
 
-class Heading extends StatelessWidget {
-  const Heading(
-      this.title, {
-        Key? key,
-        required this.size,
-        this.type = HeadingType.medium,
-        this.textAlign = TextAlign.left,
-        this.color = kTextColor,
-        this.fontWeight,
-        this.maxLines,
-        this.overflow,
-        this.letterSpacing,
-      }) : super(key: key);
+class CustomText extends StatelessWidget {
+  const CustomText(
+    this.title, {
+    Key? key,
+    required this.size,
+    this.type = TextType.regular,
+    this.textAlign = TextAlign.left,
+    this.color = kPeppermint,
+    this.fontWeight,
+    this.maxLines,
+    this.overflow,
+    this.letterSpacing,
+  }) : super(key: key);
 
   final String title;
-  final HeadingSize size;
-  final HeadingType type;
+  final TextSize size;
+  final TextType type;
   final TextAlign textAlign;
   final FontWeight? fontWeight;
   final Color color;
@@ -31,19 +31,31 @@ class Heading extends StatelessWidget {
 
   _getFontSize() {
     switch (size) {
-      case HeadingSize.h1:
-        return 25.sp;
+      case TextSize.h1:
+        return 48.sp;
 
-      case HeadingSize.h2:
+      case TextSize.h2:
+        return 42.sp;
+
+      case TextSize.h3:
+        return 36.sp;
+
+      case TextSize.h4:
+        return 28.sp;
+
+      case TextSize.xxl:
         return 22.sp;
 
-      case HeadingSize.h3:
+      case TextSize.xl:
+        return 20.sp;
+
+      case TextSize.l:
         return 18.sp;
 
-      case HeadingSize.h4:
+      case TextSize.m:
         return 17.sp;
 
-      case HeadingSize.h5:
+      case TextSize.s:
         return 14.sp;
 
       default:
@@ -57,13 +69,13 @@ class Heading extends StatelessWidget {
     }
 
     switch (type) {
-      case HeadingType.bold:
+      case TextType.bold:
         return FontWeight.bold;
 
-      case HeadingType.medium:
-        return FontWeight.w500;
+      case TextType.semiBold:
+        return FontWeight.w600;
 
-      case HeadingType.book:
+      case TextType.regular:
         return FontWeight.normal;
 
       default:

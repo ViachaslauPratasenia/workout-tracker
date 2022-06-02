@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:workout_tracker/models/workout/workout.dart';
-import 'package:workout_tracker/utils/ui_kit/heading.dart';
+import 'package:workout_tracker/utils/ui_kit/custom_text.dart';
 
 class ExerciseExpandableList extends StatelessWidget {
   final Workout workout;
@@ -18,9 +18,9 @@ class ExerciseExpandableList extends StatelessWidget {
       itemCount: workout.days.length,
       itemBuilder: (context, index) {
         return ExpansionTile(
-          title: Heading(
+          title: CustomText(
             'Day ${workout.days[index].number}',
-            size: HeadingSize.h4,
+            size: TextSize.m,
           ),
           trailing: SizedBox.shrink(),
           children: getChildren(workout.days[index].number),

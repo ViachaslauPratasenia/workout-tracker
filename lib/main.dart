@@ -51,6 +51,7 @@ class MyApp extends StatelessWidget {
         //   return widget!;
         // },
         theme: ThemeData(
+          fontFamily: 'RobotoCondensed',
           primarySwatch: Colors.blue,
         ),
         home: SplashScreen(),

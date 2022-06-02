@@ -29,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
             splashRadius: 20.w,
             icon: const Icon(
               Icons.calendar_today_outlined,
-              color: kTextColor,
+              color: kPeppermint,
             ),
           ),
         ],
@@ -46,10 +46,10 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   );
                 },
-                backgroundColor: kSecondaryColor,
+                backgroundColor: kWedgewood,
                 child: const Icon(
                   Icons.add,
-                  color: kTextColor,
+                  color: kPeppermint,
                 ),
               ),
               right: 24.w,

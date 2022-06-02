@@ -5,7 +5,7 @@ import 'package:workout_tracker/models/workout/workout.dart';
 import 'package:workout_tracker/utils/colors.dart';
 import 'package:workout_tracker/utils/images.dart';
 import 'package:workout_tracker/utils/ui_kit/base_list_item.dart';
-import 'package:workout_tracker/utils/ui_kit/heading.dart';
+import 'package:workout_tracker/utils/ui_kit/custom_text.dart';
 import 'package:workout_tracker/utils/ui_kit/subheading.dart';
 
 import '../../../models/categories.dart';
@@ -39,17 +39,17 @@ class WorkoutListItem extends StatelessWidget {
               mainAxisSize: MainAxisSize.max,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Heading(
+                CustomText(
                   workout.title,
-                  size: HeadingSize.h4,
+                  size: TextSize.m,
                 ),
                 Row(
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Subheading(
+                    CustomText(
                       '${workout.days.length} дней',
-                      size: SubheadingSize.m,
+                      size: TextSize.m,
                     ),
                     SizedBox(width: 8.w),
                     Row(
@@ -65,7 +65,7 @@ class WorkoutListItem extends StatelessWidget {
                               Images.starIcon,
                               width: 16.w,
                               height: 16.w,
-                              color: kTextColor,
+                              color: kPeppermint,
                             ),
                           );
                         },

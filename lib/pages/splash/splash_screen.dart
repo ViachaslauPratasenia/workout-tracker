@@ -1,84 +1,86 @@
-import 'dart:async';
-
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:workout_tracker/di/di.dart';
-import 'package:workout_tracker/pages/home/home_screen.dart';
-import 'package:workout_tracker/services/file_service.dart';
-import 'package:workout_tracker/storage/basic_exercises_storage.dart';
-import 'package:workout_tracker/storage/workouts_storage.dart';
+import 'package:workout_tracker/pages/splash/controller/splash_controller.dart';
 import 'package:workout_tracker/utils/colors.dart';
 import 'package:workout_tracker/utils/images.dart';
+import 'package:workout_tracker/utils/ui_kit/custom_button.dart';
+import 'package:workout_tracker/utils/ui_kit/custom_text.dart';
 
-class SplashScreen extends StatefulWidget {
+class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);
 
   @override
-  State<StatefulWidget> createState() => SplashScreenState();
-}
-
-class SplashScreenState extends State<SplashScreen>
-    with TickerProviderStateMixin {
-  late BasicExerciseStorage basicExerciseStorage;
-  late WorkoutsStorage workoutsStorage;
-
-  @override
-  void initState() {
-    basicExerciseStorage = DI.find<BasicExerciseStorage>();
-    workoutsStorage = DI.find<WorkoutsStorage>();
-    super.initState();
-
-    goToHomeAfterDelay();
-  }
-
-  @override
   Widget build(BuildContext context) {
+    final controller = DI.put(SplashController());
     return Scaffold(
-      backgroundColor: kPrimaryColor,
-      body: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Image.asset(
-              Images.calendarIcon,
-              width: ScreenUtil.defaultSize.width * 0.6,
-              height: ScreenUtil.defaultSize.width * 0.6,
-              color: Colors.white,
-            ),
-            const SizedBox(
-              height: 48,
-            ),
-            Text(
-              'Workout Tracker',
-              style: TextStyle(
-                fontSize: 22.sp,
-                fontWeight: FontWeight.bold,
-                color: kTextColor,
-                letterSpacing: 2,
+      backgroundColor: kCello,
+      body: Stack(
+        alignment: Alignment.bottomCenter,
+        children: [
+          Image.asset(
+            Images.splashBg,
+            fit: BoxFit.fill,
+            width: double.infinity,
+            height: double.infinity,
+          ),
+          Center(
+            child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: 32.w),
+              child: const CustomText(
+                'Workout Tracker',
+                size: TextSize.h1,
+                type: TextType.semiBold,
+                color: kAquaIsland,
+                textAlign: TextAlign.center,
               ),
             ),
-          ],
-        ),
+          ),
+          Obx(
+            () => AnimatedOpacity(
+              opacity: controller.needShowInfo.value ? 0.0 : 1.0,
+              duration: const Duration(milliseconds: 100),
+              child: Padding(
+                padding: EdgeInsets.only(bottom: 64.h),
+                child: CupertinoActivityIndicator(
+                  animating: true,
+                  color: kAquaIsland,
+                  radius: 32.r,
+                ),
+              ),
+            ),
+          ),
+          Obx(
+            () => AnimatedOpacity(
+              opacity: controller.needShowInfo.value ? 1.0 : 0.0,
+              duration: const Duration(milliseconds: 400),
+              child: Padding(
+                padding: EdgeInsets.only(bottom: 64.h, left: 36.w, right: 36.w),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    const CustomText(
+                      'Are you ready for the next challenge?',
+                      textAlign: TextAlign.center,
+                      type: TextType.semiBold,
+                      size: TextSize.h4,
+                    ),
+                    SizedBox(
+                      height: 40.h,
+                    ),
+                    CustomButton(
+                      onPressed: () {},
+                      text: 'Start now',
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
-    );
-  }
-
-  void goToHomeAfterDelay() async {
-    Timer(const Duration(seconds: 2), () async {
-      _loadTrainings().then((value) {
-        Get.off(() => const HomeScreen());
-      });
-    });
-  }
-
-  Future<void> _loadTrainings() async {
-    await FileService.parseWorkoutListFile().then(
-      (value) => workoutsStorage.storeAllWorkouts(value),
-    );
-
-    await FileService.parseBasicExercisesFile().then(
-      (value) => basicExerciseStorage.storeAllExercises(value),
     );
   }
 }
