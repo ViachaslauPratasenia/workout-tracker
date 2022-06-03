@@ -24,4 +24,7 @@ class Images {
   static const String homeBackground = 'assets/home_workout.jpeg';
   static const String gymBackground = 'assets/gym_workout.jpeg';
   static const String splashBg = 'assets/images/splash_bg.png';
+  static const String firstOnboardingBg = 'assets/images/onboarding_1.png';
+  static const String secondOnboardingBg = 'assets/images/onboarding_2.png';
+  static const String thirdOnboardingBg = 'assets/images/onboarding_3.png';
 }

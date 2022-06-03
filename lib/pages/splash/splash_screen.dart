@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:workout_tracker/di/di.dart';
+import 'package:workout_tracker/pages/onboarding/onboarding_screen.dart';
 import 'package:workout_tracker/pages/splash/controller/splash_controller.dart';
 import 'package:workout_tracker/utils/colors.dart';
 import 'package:workout_tracker/utils/images.dart';
@@ -71,7 +72,7 @@ class SplashScreen extends StatelessWidget {
                       height: 40.h,
                     ),
                     CustomButton(
-                      onPressed: () {},
+                      onPressed: () => Get.off(() => const OnboardingScreen()),
                       text: 'Start now',
                     ),
                   ],
