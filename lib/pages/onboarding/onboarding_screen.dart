@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:workout_tracker/pages/auth/login_screen.dart';
 import 'package:workout_tracker/utils/colors.dart';
 import 'package:workout_tracker/utils/images.dart';
+import 'package:workout_tracker/utils/ui_kit/base_screen.dart';
 import 'package:workout_tracker/utils/ui_kit/custom_button.dart';
 import 'package:workout_tracker/utils/ui_kit/custom_text.dart';
 import 'package:workout_tracker/utils/ui_kit/dots.dart';
@@ -35,7 +37,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
   void Function() _onPressed(bool isLastPage) => () {
         if (isLastPage) {
-          Get.back();
+          Get.to(() => const LoginScreen());
         } else {
           _pageController.nextPage(
             duration: const Duration(milliseconds: 300),
@@ -49,8 +51,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     final isLastPage = currentPage == data.length - 1;
     final buttonText = isLastPage ? 'Let\'s start!' : 'Next';
 
-    return Material(
-      color: kCello,
+    return BaseScreen(
+      backgroundColor: kCello,
       child: SizedBox(
         width: double.infinity,
         child: PageView.builder(

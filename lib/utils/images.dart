@@ -12,6 +12,12 @@ class Images {
   static const String homeIcon = 'assets/home.png';
   static const String pullBarsIcon = 'assets/pull_bars.png';
   static const String starIcon = 'assets/star.png';
+  static const String googleIcon = 'assets/google.svg';
+  static const String appleIcon = 'assets/apple.svg';
+  static const String closeIcon = 'assets/close.svg';
+  static const String checkIcon = 'assets/check.svg';
+  static const String showIcon = 'assets/show.svg';
+  static const String hideIcon = 'assets/hide.svg';
 
   //Bottom navigation
   static const String workoutPlanIcon = 'assets/workout_plan.png';
@@ -27,4 +33,5 @@ class Images {
   static const String firstOnboardingBg = 'assets/images/onboarding_1.png';
   static const String secondOnboardingBg = 'assets/images/onboarding_2.png';
   static const String thirdOnboardingBg = 'assets/images/onboarding_3.png';
+  static const String loginBg = 'assets/images/login_bg.png';
 }

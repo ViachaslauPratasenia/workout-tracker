@@ -53,7 +53,7 @@ class CustomText extends StatelessWidget {
         return 18.sp;
 
       case TextSize.m:
-        return 17.sp;
+        return 16.sp;
 
       case TextSize.s:
         return 14.sp;

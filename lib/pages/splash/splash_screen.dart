@@ -7,6 +7,7 @@ import 'package:workout_tracker/pages/onboarding/onboarding_screen.dart';
 import 'package:workout_tracker/pages/splash/controller/splash_controller.dart';
 import 'package:workout_tracker/utils/colors.dart';
 import 'package:workout_tracker/utils/images.dart';
+import 'package:workout_tracker/utils/ui_kit/base_screen.dart';
 import 'package:workout_tracker/utils/ui_kit/custom_button.dart';
 import 'package:workout_tracker/utils/ui_kit/custom_text.dart';
 
@@ -16,9 +17,10 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final controller = DI.put(SplashController());
-    return Scaffold(
+
+    return BaseScreen(
       backgroundColor: kCello,
-      body: Stack(
+      child: Stack(
         alignment: Alignment.bottomCenter,
         children: [
           Image.asset(

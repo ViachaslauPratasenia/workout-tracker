@@ -25,6 +25,7 @@ class BaseScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: backgroundColor,
       appBar: appBar,
+      resizeToAvoidBottomInset: false,
       body: Stack(
         children: [
           Positioned.fill(
